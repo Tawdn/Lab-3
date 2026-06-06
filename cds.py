@@ -80,19 +80,19 @@ def main():
     }
 
     ### Start by printing the student information
-    print(get_name_and_student_id(myinfo))
+    print(get_name_and_student_id(myinfo), "\n")
     ### Next, print the favourite pizza toppings as a bullet point list in all caps
-    print(get_pizza_toppings(myinfo))
+    print(get_pizza_toppings(myinfo),"\n")
     ### Then, store new toppings to be called later
     new_toppings = ("bacon", "sausage")
     ### Call the function to add the new toppings to the "pizza toppings" list
     add_pizza_toppings(myinfo, new_toppings)
     ### Then, print the new list of pizza toppings as a bullet point list, this time in alphabetical order and lowercase
-    print(get_pizza_toppings(myinfo))
+    print(get_pizza_toppings(myinfo),"\n")
     ### Next, we call the function to add a movie to our dictionary, "title": "Interstellar", "genre": "fantasy"
     add_movie(myinfo, "interstellar", "fantasy")
     ### Finally, we print the genres from our dictionary
-    print(get_movie_genres(myinfo))
+    print(get_movie_genres(myinfo),"\n")
     ### Then, we print the movies from our dictionary
     print(get_movie_titles(myinfo["movies"]))
 
